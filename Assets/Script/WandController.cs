@@ -34,12 +34,11 @@ public class WandController : MonoBehaviour
             open.SetActive(true);
         }
         if (device.GetPressDown (triggerButton) && touch.pickup == null) {
-            Debug.Log("zxc");
             take = true;
         }
 
 		if (device.GetPressUp (triggerButton) && touch.pickup != null) {
-            Debug.Log("asd");
+
             touch.pickup.GetComponent<Rigidbody>().useGravity = true;
             touch.pickup.GetComponent<Rigidbody>().isKinematic = false;
             touch.pickup.transform.parent = null;
