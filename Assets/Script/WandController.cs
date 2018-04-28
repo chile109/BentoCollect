@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 public class WandController : MonoBehaviour
 {
-
+    public static WandController _inst;
     private SteamVR_TrackedObject trackedObj;
     SteamVR_Controller.Device device; 
     public GameObject open, close,cube;
@@ -13,7 +13,7 @@ public class WandController : MonoBehaviour
     
     void Start ()
 	{
-        
+        _inst = this;
         close.SetActive(false);
     }
 
@@ -33,14 +33,13 @@ public class WandController : MonoBehaviour
             close.SetActive(false);
             open.SetActive(true);
         }
-        if (device.GetPressDown (triggerButton) && touch.pickup != null) {
+        if (device.GetPressDown (triggerButton) && touch.pickup == null) {
+            Debug.Log("zxc");
             take = true;
-            touch.pickup.transform.parent = cube.transform;
-            touch.pickup.GetComponent<Rigidbody> ().useGravity = false;
-            touch.pickup.GetComponent<Rigidbody>().isKinematic = true;
         }
 
 		if (device.GetPressUp (triggerButton) && touch.pickup != null) {
+            Debug.Log("asd");
             touch.pickup.GetComponent<Rigidbody>().useGravity = true;
             touch.pickup.GetComponent<Rigidbody>().isKinematic = false;
             touch.pickup.transform.parent = null;
