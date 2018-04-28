@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="Firstlevel_U.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\set.cs">
+    <Files>
+      <File FileName="F:\程式碼\bullet.cs" Line="12" Column="43" />
+      <File FileName="Assets\WandController.cs" Line="15" Column="55" />
+      <File FileName="Assets\set.cs" Line="16" Column="23" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
