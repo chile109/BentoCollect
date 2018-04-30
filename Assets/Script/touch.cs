@@ -12,7 +12,7 @@ public class touch : MonoBehaviour
         if (WandController.take)
         {
             Debug.Log(2);
-            if (collision.tag == "Get")
+            if (collision.tag == "Get" && WandController.take)
             {
                 Debug.Log(3);
                 pickup = collision.gameObject;

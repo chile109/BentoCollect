@@ -719,8 +719,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.26006573, y: 0.1557312, z: 0.66810703}
-  m_Center: {x: 0.05664447, y: 0.20016563, z: -0.16594648}
+  m_Size: {x: 0.26006573, y: 0.05222577, z: 0.38516045}
+  m_Center: {x: 0.05664447, y: 0.17021498, z: -0.02447319}
 --- !u!1 &401939954 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 124034, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
@@ -902,18 +902,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64951d61999d9b14c955be0515560ee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  food:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1 &596354487
 GameObject:
   m_ObjectHideFlags: 0
@@ -1064,7 +1052,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 708838406}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0104, y: -0.051, z: 0.027}
+  m_LocalPosition: {x: -0.0104, y: -0.0233, z: -0.0024}
   m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
   m_Children: []
   m_Father: {fileID: 646637857}
@@ -1112,7 +1100,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 1, z: 1}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &708838410
 MeshFilter:
@@ -2325,7 +2313,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.3
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
       propertyPath: m_LocalPosition.z
