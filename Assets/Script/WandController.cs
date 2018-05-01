@@ -2,12 +2,14 @@
 using Valve.VR;
 using System.Collections;
 using System.Collections.Generic;
-
+using UnityEngine.SceneManagement;
 public class WandController : MonoBehaviour
 {
     public static WandController _inst;
+    public SteamVR_TrackedObject trackedObj2;
     private SteamVR_TrackedObject trackedObj;
     SteamVR_Controller.Device device;
+    SteamVR_Controller.Device device2;
     public GameObject open, close, cube;
     public static bool take = false;
 
@@ -19,9 +21,21 @@ public class WandController : MonoBehaviour
 
     void Update()
     {
+        var device = SteamVR_Controller.Input((int)trackedObj2.index);
+
+        if (device.GetTouchUp(SteamVR_Controller.ButtonMask.Trigger))
+        {
+            Debug.Log("fawfa");
+            SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+        }
+
         var deviceIndex = SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Leftmost);
+
         device = SteamVR_Controller.Input(deviceIndex);
+
+
         var triggerButton = SteamVR_Controller.ButtonMask.Trigger;
+
 
         if (device.GetTouchDown(triggerButton) && open.activeInHierarchy)
         {
@@ -54,7 +68,7 @@ public class WandController : MonoBehaviour
         else if (device.GetPressUp(triggerButton))
             take = false;
 
-
+        
     }
 
 
